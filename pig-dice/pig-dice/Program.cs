@@ -8,7 +8,6 @@ namespace pig_dice
         {
             Console.WriteLine("Welcome to the Pig Dice App!");
             string choice = "y";
-          
             Random rand = new Random();
             while (choice.Equals("y"))
             {
@@ -17,8 +16,8 @@ namespace pig_dice
                 Console.WriteLine("Here we go... ");
                 int highestScore = 0;
                 int count = 0;
-                while (count< numberOfGames)
-                {   
+                while (count < numberOfGames)
+                {
                     int score = 0;
                     Boolean notEqualOne = true;
                     while (notEqualOne)
@@ -29,7 +28,7 @@ namespace pig_dice
                             Console.WriteLine("# " + randNbr);
                             score += randNbr;
                         }
-                       else
+                        else
                         {
                             score += randNbr;
                             notEqualOne = false;
@@ -50,8 +49,6 @@ namespace pig_dice
                 choice = Console.ReadLine();
             }
             Console.WriteLine("Bye!");
-           
-
         }
     }
 }
