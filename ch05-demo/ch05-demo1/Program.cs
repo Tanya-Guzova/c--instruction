@@ -13,7 +13,8 @@ namespace ch05_demo1
 
             //to use the method, using a different order of params, use their variable names
             PrintOrderDetails(productName: "Light Up Pumpkin", sellerName: "Target", orderNum: 33);
-
+            PrintCandyStats("Snickers", 5);
+            PrintCandyStats("KitKat");
             PrintFavSong("Accidents Will Happen");
         }
 
@@ -35,13 +36,14 @@ namespace ch05_demo1
             }
             return n;
         }
-        //demonstrate optional/namedparameters
+        //demonstrate named parameters
         private static void PrintOrderDetails(String sellerName, int orderNum, String productName)
         {
             Console.WriteLine("OrderDetails: " + productName + ", on order #  " + orderNum + ", purchased at "
                 + sellerName + ".");
 
         }
+        // demonstrate optional parameters
         private static void PrintCandyStats(String candyName, int quantity = 0)
         {
             Console.WriteLine("* " + quantity + " pieces of " + candyName);
